@@ -1,7 +1,7 @@
 body{
-    width: 1440px;
     color: var(--SLATE, #434455);
-    font-family: Roboto;
+    font-family: Roboto,sans-serif;
+    background-color: #FFFFFF;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 2%;
@@ -9,29 +9,28 @@ body{
 
 .header-container{
     display: flex;
-    background: #FFFFFF;
 }
-.logo{
-    align-self: center;
-    padding-right: 45px;
-    padding-left: 156px;
-}
+
 .logo-link{
+        margin-right: 45px;
+            margin-left: 156px;
     color: var(--IRIS, #4D5AE5);
     text-decoration: none;
 font-family: Raleway;
 font-size: 18px;
 font-weight: 700;
+line-height: 1.17;
+letter-spacing: 0.03em;
+letter-spacing: 0.03em
 }
-.logo-link span{
+.logo-span{
     color: var(--NAVY-BLUE, #2E2F42);
 }
 .nav-links{
-padding-top: 25px;
+    display: inline-flex;
+list-style: none;
 }
 .nav-item{
-    display: inline-flex;
-    list-style: none;
     padding-right: 40px;
 }
 .nav-item a{
@@ -41,7 +40,12 @@ font-weight: 500;
 }
 .nav-item a:hover{
     color: var(--OCEAN, #404BBF);
-    font-weight: 500;
+}
+.nav-item a:focus{
+    color: var(--OCEAN, #404BBF);
+}
+.address{
+    font-style: normal;
 }
 .address-links{
     padding-left: 332px;
@@ -54,8 +58,7 @@ font-weight: 500;
 
 .address-item a{
     color: var(--SLATE, #434455);
-font-size: 16px;
-font-weight: 400;
+letter-spacing: 0.02em;
     text-decoration: none;
 }
 .address-item a:hover{
@@ -63,6 +66,9 @@ font-weight: 400;
 font-weight: 500;
 letter-spacing: 0.32px;
 border-radius: 2px;
+}
+.address-item a:focus{
+    color: var(--OCEAN, #404BBF);
 }
 .section1{
     background: var(--NAVY-BLUE, #2E2F42);
