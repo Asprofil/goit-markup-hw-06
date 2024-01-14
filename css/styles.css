@@ -1,6 +1,6 @@
 body{
     color: var(--SLATE, #434455);
-    font-family: Roboto,sans-serif;
+    font-family: "Roboto",sans-serif;
     background-color: #FFFFFF;
     font-size: 16px;
     line-height: 24px;
@@ -8,7 +8,6 @@ body{
 }
 
 .header-container{
-    display: flex;
 }
 
 .logo-link{
@@ -16,108 +15,99 @@ body{
             margin-left: 156px;
     color: var(--IRIS, #4D5AE5);
     text-decoration: none;
-font-family: Raleway;
+font-family: "Raleway",sans-serif;
 font-size: 18px;
 font-weight: 700;
 line-height: 1.17;
 letter-spacing: 0.03em;
-letter-spacing: 0.03em
+text-transform: uppercase;
 }
 .logo-span{
     color: var(--NAVY-BLUE, #2E2F42);
 }
 .nav-links{
-    display: inline-flex;
 list-style: none;
 }
 .nav-item{
-    padding-right: 40px;
+    margin-right: 40px;
 }
-.nav-item a{
+.nav-link{
     color: var(--NAVY-BLUE, #2E2F42);
     text-decoration: none;
 font-weight: 500;
 }
-.nav-item a:hover{
+.nav-link:hover{
     color: var(--OCEAN, #404BBF);
 }
-.nav-item a:focus{
+.nav-link:focus{
     color: var(--OCEAN, #404BBF);
 }
 .address{
     font-style: normal;
 }
 .address-links{
-    padding-left: 332px;
+    margin-left: 332px;
 }
 .address-item{
-    display: inline-flex;
     list-style: none;
-    padding-right: 40px;
+    margin-right: 40px;
 }
 
-.address-item a{
+.address-link{
     color: var(--SLATE, #434455);
 letter-spacing: 0.02em;
     text-decoration: none;
 }
-.address-item a:hover{
+.address-link:hover{
     color: var(--OCEAN, #404BBF);
 font-weight: 500;
 letter-spacing: 0.32px;
-border-radius: 2px;
 }
-.address-item a:focus{
+.address-link:focus{
     color: var(--OCEAN, #404BBF);
 }
-.section1{
+.section-one{
     background: var(--NAVY-BLUE, #2E2F42);
-height: 600px;
 text-align: center;
 }
 .first-title{
 color: var(--WHITE, #FFF);
 text-align: center;
 font-size: 56px;
-line-height: 60px;
 letter-spacing: 1.12px;
-padding-top: 188px;
-padding-bottom: 48px;
+line-height: 1.07;
 margin-top: 0px;
-margin-bottom: 0px;
+margin-bottom: 48px;
 }
 
 button{
-    display: inline-flex;
-padding: 16px 32px;
-align-items: flex-start;
-gap: 10px;
-    border-radius: 4px;
+margin-bottom: 188px;
 background: var(--IRIS, #4D5AE5);
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 color: var(--WHITE, #FFF);
 font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.04em;
+cursor: pointer;
 }
 button:hover{
-    border-radius: 4px;
     background: var(--OCEAN, #404BBF);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    cursor: pointer;
 }
-
+button:focus{
+background-color: #404BBF;
+}
 .goal-title{
     color: var(--NAVY-BLUE, #2E2F42);
 text-align: center;
 font-size: 36px;
+letter-spacing: 0.02em;
 text-transform: capitalize;
 }
 .goal-list{
     list-style: none;
-    display: flex;
-padding-left: 156px;
+margin-left: 156px;
+margin-right: 156px;
 }
-.goal-item{
-    width: 264px;   
+.goal-item{ 
     margin-left: 24px;
 }
 .goal-item-title{
@@ -130,14 +120,13 @@ font-weight: 500;
 .goal-item-text{
     margin-top: 0px;
     margin-bottom: 0px;
-    width: 264px; 
 line-height: 24px;
+letter-spacing: 0.02em;
 }
 .team{
     background: var(--CLOUD, #F4F4FD);
 }
 .team ul{
-    display: flex;
     list-style: none;
 }
 .team-title{
@@ -145,20 +134,18 @@ line-height: 24px;
 text-align: center;
 font-size: 36px;
 text-transform: capitalize;
-padding-top: 120px;
-padding-bottom: 72px;
+margin-bottom: 72px;
+line-height: 1.11;
+letter-spacing: 0.02em;
 }
 .team-list{
-    padding-left: 156px;
-    padding-right: 156px;
-    padding-bottom: 120px;
+    margin-left: 156px;
+    margin-right: 156px;
 }
 .team-item{
     margin-right: 24px;
     text-align: center;
-    border-radius: 0px 0px 4px 4px;
 background: var(--WHITE, #FFF);
-box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .team-item-title{
     color: var(--NAVY-BLUE, #2E2F42);
@@ -166,12 +153,14 @@ font-size: 20px;
 font-weight: 500;
 margin-top: 32px;
 margin-bottom: 0px;
+letter-spacing: 0.02em;
 }
 .team-item-text{
     margin-top: 8px;
     margin-bottom: 32px;
 font-size: 16px;
 font-weight: 400;
+letter-spacing: 0.02em;
 }
 .project-title{
     color: var(--NAVY-BLUE, #2E2F42);
@@ -182,7 +171,6 @@ text-transform: capitalize;
 }
 .project-list{
     list-style: none;
-    display: flex;
     margin-left: 156px;
 }
 .project-item{
@@ -221,9 +209,8 @@ font-size: 18px;
 
 }
 .footer-logo{
-    padding-top: 101.5px;
-    padding-left: 156px;
-    padding-bottom: 17.5px;
+    margin-left: 156px;
+    margin-bottom: 17.5px;
 }
 #footer-logo span{
     color: var(--CLOUD, #F4F4FD);
@@ -234,10 +221,8 @@ letter-spacing: 0.54px;
 
 }
 .footer-text{
-    width: 264px;
     color: var(--CLOUD, #F4F4FD);
     margin-bottom: 0px;
     margin-top: 0px;
     margin-left: 156px;
-    padding-bottom: 100px;
 }
