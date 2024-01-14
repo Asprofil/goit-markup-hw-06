@@ -202,7 +202,7 @@ letter-spacing: 0.32px;
     background: var(--NAVY-BLUE, #2E2F42);
     color: var(--CLOUD, #F4F4FD);
 }
-#footer-logo{
+.footer-logo{
     color: var(--IRIS, #4D5AE5);
     text-decoration: none;
 font-family: "Raleway",
