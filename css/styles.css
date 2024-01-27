@@ -151,7 +151,7 @@ text-transform: capitalize;
     gap: 24px;
 }
 .goal-item{ 
-flex-basis: calc((100% - 72px) / 4);
+width: calc((100% - 24px) / 4);
 }
 .goal-item-title{
     margin-top: 0px;
@@ -186,6 +186,7 @@ letter-spacing: 0.02em;
     display: flex;
 }
 .team-item{
+    flex-basis: calc((100% - 72px) / 4);
     text-align: center;
 background: var(--WHITE, #FFF);
 border-radius: 0px 0px 4px 4px;
@@ -225,14 +226,14 @@ margin-bottom: 72px;
     column-gap: 24px;
     row-gap: 48px;
 }
-.project-item{
-    
-}
+
 .project-container{
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
+    border-top: none;
 }
 .project-item{
+    width: calc((100% - 24px) / 3);
 }
 .project-item-title{
     color: var(--NAVY-BLUE, #2E2F42);
