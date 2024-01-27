@@ -149,9 +149,10 @@ text-transform: capitalize;
 .goal-list{
     display: flex;
     gap: 24px;
+    padding-left: 0px;
 }
 .goal-item{ 
-width: calc((100% - 72px) / 4);
+flex-basis: calc((100% - 72px) / 4);
 }
 .goal-item-title{
     margin-top: 0px;
@@ -225,6 +226,7 @@ margin-bottom: 72px;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
+    padding-left: 0px;
 }
 
 .project-container{
