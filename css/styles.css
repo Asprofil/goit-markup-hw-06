@@ -37,6 +37,8 @@ ul{
     
 }
 .header-container{
+    margin: 0 auto;
+    width: 1158px;
     display: flex;
 }
 .logo-link{
@@ -82,7 +84,6 @@ letter-spacing: 0.02em;
 .address-links{
     display: flex;
     gap: 40px;
-    margin-left: 352px;
 }
 .address-item{
     padding: 24px 0;
@@ -153,7 +154,7 @@ text-transform: capitalize;
     gap: 24px;
 }
 .goal-item{ 
-width: calc((100% - 72px) / 4);
+flex-basis: calc((100% - 3 * 24px) / 4)
 }
 .goal-item-title{
     margin-top: 0px;
@@ -188,7 +189,7 @@ letter-spacing: 0.02em;
     display: flex;
 }
 .team-item{
-    width: calc((100% - 72px) / 4);
+    flex-basis: calc((100% - 3 * 24px) / 4);
     text-align: center;
 background: var(--WHITE, #FFF);
 border-radius: 0px 0px 4px 4px;
@@ -271,7 +272,8 @@ font-size: 18px;
 
 }
 .footer-logo{
-
+display: inline-block;
+margin-bottom: 16px;
 }
 .footer-logo-span{
     color: var(--CLOUD, #F4F4FD);
