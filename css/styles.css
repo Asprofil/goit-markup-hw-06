@@ -324,7 +324,7 @@ letter-spacing: 0.32px;
 }
 .footer-container{
     display: flex;
-    padding-left: 120px;
+    align-items: baseline;
 }
 .right-footer{
     align-items: baseline;
@@ -358,7 +358,8 @@ letter-spacing: 0.54px;
     max-width: 250px;
 }
 .left-footer{
-margin-right: 120px;
+    margin-right: 120px;
+    padding-left: 120px;
 }
 .social-text{
     font-weight: 500;
