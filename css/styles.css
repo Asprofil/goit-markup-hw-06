@@ -37,7 +37,71 @@ ul{
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     
 }
-
+.backdrop {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color:#2E2F42 ;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.is-open{
+opacity: 1;
+visibility: visible;
+pointer-events: auto;
+}
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 408px;
+    transform: translate(-50%,-50%) scale(1);
+    min-height: 584px;
+    background-color: #FCFCFC;
+    border-radius: 4px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modalclose {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    padding: 0px;
+    cursor: pointer;
+    background-color: #E7E9FC;
+    justify-content: center;
+    align-items: baseline;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+}
+.modalclose:hover,.modalclose:focus{
+    background-color: #404BBF;
+    border: none;
+}
+.modalclose:hover>.modalclose-icon,.modalclose:focus>.modalclose-icon{
+    fill: #FFFFFF;
+}
+.modalclose-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input-label{
+    font-weight: 400;
+font-size: 12px;
+line-height: 117%;
+letter-spacing: 0.04em;
+}
+.input{
+    border: 1px solid #8E8F99;
+border-radius: 4px;
+width: 360px;
+height: 40px;
+}
 .logo-link{
         margin-right: 76px;
     color: var(--IRIS, #4D5AE5);
@@ -141,7 +205,7 @@ margin: auto;
 margin-bottom: 48px;
 }
 
-button{
+.button{
     display: block;
     min-width: 169px;
     height: 56px;
@@ -157,11 +221,11 @@ margin: auto;
 cursor: pointer;
 transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-button:hover{
+.button:hover{
     background: var(--OCEAN, #404BBF);
   
 }
-button:focus{
+.button:focus{
 background-color: #404BBF;
 }
 .goal{
@@ -436,4 +500,54 @@ letter-spacing: 0.54px;
 }
 .social{
     fill:#f4f4fd
+}
+.subscribe {
+    margin-left: 80px;
+}
+.subscribe-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+    margin-top: 0;
+}
+.input {
+    width: 264px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+.input::placeholder{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 200%;
+    letter-spacing: 0.04em;
+    color: #FFF;
+    padding-left: 16px;
+
+}
+.subscribe-btn {
+    margin-left: 24px;
+    border-radius: 4px;
+   padding-top: 8px;
+   padding-bottom: 8px;
+width: 165px;
+height: 40px;
+background-color: #4D5AE5;
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.04em;
+text-align: center;
+color: #fff;
+align-items: center;
+    justify-content: baseline;
+}
+
+.send-icon{
+ margin-left: 16px;
 }
