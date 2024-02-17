@@ -504,6 +504,10 @@ letter-spacing: 0.54px;
 .subscribe {
     margin-left: 80px;
 }
+.subscribe-form{
+    display: flex;
+    gap: 24px;
+}
 .subscribe-text {
     font-weight: 500;
     font-size: 16px;
@@ -518,34 +522,40 @@ letter-spacing: 0.54px;
     height: 40px;
     background-color: transparent;
     border: 1px solid #FFFFFF;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    color: #ffffff;
     border-radius: 4px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 .input::placeholder{
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 200%;
-    letter-spacing: 0.04em;
-    color: #FFF;
-    padding-left: 16px;
+
+    color: #ffffff;
 
 }
 .subscribe-btn {
+    font-family: "Roboto", sans-serif;
     margin-left: 24px;
     border-radius: 4px;
    padding-top: 8px;
    padding-bottom: 8px;
-width: 165px;
-height: 40px;
-background-color: #4D5AE5;
-font-weight: 500;
-font-size: 16px;
-line-height: 150%;
-letter-spacing: 0.04em;
-text-align: center;
-color: #fff;
-align-items: center;
-    justify-content: baseline;
+   min-width: 165px;
+    height: 40px;
+    background-color: #4D5AE5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    display: flex;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
 }
 
 .send-icon{
