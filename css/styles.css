@@ -163,7 +163,7 @@ border-color: #4D5AE5;
 .textarea:focus{
     border-color: #4D5AE5;
 }
-.checkbox-container{
+.checkbox{
     margin-bottom: 24px;
 }
 .checkbox-label{
@@ -172,7 +172,7 @@ border-color: #4D5AE5;
     letter-spacing: 0.04em;
     color: #8e8f99;
 }
-.checkbox{
+.checkbox-label-span{
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -185,11 +185,12 @@ border-color: #4D5AE5;
     justify-content: center;
     fill: transparent;
 }
-.input-checkbox:checked+.checkbox-label .checkbox {
-    background-color: #404BBF;
-    border: none;
-    fill: #F4F4FD;
+.checkbox-input:checked + .checkbox-label .checkbox-label-span {
+  background-color: #404BBF;
+  border: none;
+  fill: #F4F4FD;
 }
+
 .checkbox-link{
     color:#4d5ae5;
 }
