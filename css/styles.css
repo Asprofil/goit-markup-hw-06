@@ -119,6 +119,9 @@ margin-bottom: 4px;
 .label-container{
 position: relative;
 }
+.label-comment{
+    margin-bottom: 16px;
+}
 .input{
     width: 100%;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -139,7 +142,7 @@ position: relative;
 .input:focus{
 border-color: #4D5AE5;
 }
-.input:focus .input-icon:focus{
+.input:focus+.input-icon{
     fill: #4D5AE5;
 }
 .textarea{
@@ -182,7 +185,7 @@ border-color: #4D5AE5;
     justify-content: center;
     fill: transparent;
 }
-.checkbox-input:checked{
+ .checkbox-input:checked+.checkbox-label-span{
 background-color:#404bbf;
 border: none;
 fill:#F4F4FD;
@@ -191,6 +194,8 @@ fill:#F4F4FD;
     color:#4d5ae5;
 }
 .modal-btn{
+    display: block;
+    margin: 0 auto;
     min-width: 169px;
     height: 56px;
     font-family: "Roboto", sans-serif;
