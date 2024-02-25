@@ -44,7 +44,7 @@
                 <use href="./images/icons.svg#icon-header-1"></use>
             </svg>
         </button>
-        <div class="mobile-menu ">
+        <div class="mobile-menu">
             <div class="mobile-menu-container">
                 <button type="button" class="modalclose">
                     <svg width="8" height="8" class="modalclose-icon">
@@ -162,7 +162,7 @@
             <h2 class="team-title">Our Team</h2>
             <ul class="team-list">
                 <li class="team-item">
-                    <img src="./images/team_1.jpg" alt="Mark Guerrero Image" width="264">
+                    <img class="team-picture" src="./images/img-3.jpg" srcset="./img3-2x.jpg img3-2x" alt="cute girl" width="264">
                     <div class="team-container">
                      <h3 class="team-item-title">Mark Guerrero</h3>
                      <p class="team-item-text">Product Designer</p>
@@ -320,8 +320,14 @@
             <ul class="project-list">
                 <li class="project-item">
                     <div class="overlay">
-                    <img class="project-item-picture-small" src="./images/portfolio1-mini.jpg" width="288" alt="Banking App Image">
-                    <img class="project-item-picture-big" src="./images/portfoilio1.jpg" width="360" alt="Banking App Image">
+                <picture>
+                    <source media="(min-width:1158px)" srcset="./images/img5 img5, ./images/img5-2x img5-2x">
+                    <source media="(min-width:768px)" srcset="./images/port-tab1 port-tab1, ./images/port-tab1-2x port-tab1-2x">
+                    <source media="(min-width: 320px)"
+                        srcset="./images/port-mobile1.jpg port-mobile1, ./images/port-mobile1-2x port-mobile1-2x">
+                    <img class="portfolio-picture" src="./images/img5.jpg" srcset="./images/img5-2x img5-2x" alt="Banking App"
+                        width="360">
+                </picture>
                     <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                 </div>
                     <div class="project-container">
@@ -331,8 +337,14 @@
                 </li>
                 <li class="project-item">
                     <div class="overlay">
-                    <img class="project-item-picture-small" src="./images/portfolio2-mini.jpg" width="288" alt="Cashless Payment Image">
-                    <img class="project-item-picture-big" src="./images/portfoilio2.jpg" width="360" alt="Cashless Payment Image">
+                    <picture>
+                        <source media="(min-width:1158px)" srcset="./images/img6 img6, ./images/img6-2x img6-2x">
+                        <source media="(min-width:768px)" srcset="./images/port-tab2 port-tab2, ./images/port-tab2-2x port-tab2-2x">
+                        <source media="(min-width: 320px)"
+                            srcset="./images/port-mobile2.jpg port-mobile-2, ./images/port-mobile2-2x port-mobile2-2x">
+                        <img class="portfolio-picture" src="./images/img6.jpg" srcset="./images/img6-2x img6-2x" alt="Cashless Payment"
+                            width="360" height="300">
+                    </picture>
                     <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                     </div>
                     <div class="project-container">
@@ -342,8 +354,14 @@
                 </li>
                 <li class="project-item">
                     <div class="overlay">
-                    <img class="project-item-picture-small" src="/images/portfolio3-mini.jpg" width="288" alt="Meditation App Image">
-                    <img class="project-item-picture-big" src="./images/portfoilio3.jpg" width="360" alt="Meditation App Image">
+                    <picture>
+                        <source media="(min-width:1158px)" srcset="./images/img7 img7, ./images/img7-2x img7-2x">
+                        <source media="(min-width:768px)" srcset="./images/port-tab3 port-tab3, ./images/port-tab3-2x port-tab3-2x">
+                        <source media="(min-width: 320px)"
+                            srcset="./images/port-mobile3.jpg port-mobile3, ./images/port-mobile3-2x port-mobile3-2x">
+                        <img class="portfolio-picture" src="./images/img7.jpg" srcset="./images/img7-2x img7-2x" alt="Meditation App"
+                            width="360" height="300">
+                    </picture>
                     <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                     </div>
                     <div class="project-container">
@@ -353,8 +371,15 @@
                 </li>
                 <li class="project-item">
                     <div class="overlay">
-                    <img class="project-item-picture-small" src="/images/portfolio4-mini.jpg" width="288" alt="Taxi Service Image">
-                    <img class="project-item-picture-big" src="./images/portfoilio4.jpg" width="360" alt="Taxi Service Image">
+                <picture>
+                    <source media="(min-width:1158px)" srcset="./images/img8 img8, ./images/img8-2x img8-2x">
+                    <source media="(min-width:768px)" srcset="./images/port-tab4 port-tab4, ./images/port-tab4-2x port-tab4-2x">
+                    <source media="(min-width: 320px)"
+                        srcset="./images/port-mobile4.jpg port-mobile4, ./images/port-mobile4-2x port4-mobile-2x">
+                    <img class="portfolio-picture" src="./images/img8.jpg" srcset="./images/img8-2x img8-2x" alt="Taxi Service"
+                        width="360" height="300">
+                
+                </picture>
                     <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                     </div>
                     <div class="project-container">
@@ -364,8 +389,14 @@
                 </li>
                 <li class="project-item">
                     <div class="overlay">
-                    <img class="project-item-picture-small" src="/images/portfolio5-mini.jpg" width="288" alt="Screen Illustrations Image">
-                    <img class="project-item-picture-big" src="./images/portfoilio5.jpg" width="360" alt="Screen Illustrations Image">
+                <picture>
+                    <source media="(min-width:1158px)" srcset="./images/img9 img9, ./images/img9-2x img9-2x">
+                    <source media="(min-width:768px)" srcset="./images/port-tab5 port-tab5, ./images/port-tab5-2x port-tab5-2x">
+                    <source media="(min-width: 320px)"
+                        srcset="./images/port-mobile5.jpg port-mobile5, ./images/port-mobile5-2x port-mobile5-2x">
+                    <img class="portfolio-picture" src="./images/img9.jpg" srcset="./images/img9-2x img9-2x" alt="Screen Illustrations"
+                        width="360" height="300">
+                </picture>
                     <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                     </div>
                     <div class="project-container">
@@ -375,8 +406,15 @@
                 </li>
                 <li class="project-item" >
                     <div class="overlay">
-                    <img class="project-item-picture-small" src="/images/portfolio6-mini.jpg" width="288" alt="Online Courses Image">
-                    <img class="project-item-picture-big" src="./images/portfoilio6.jpg" width="360" alt="Online Courses Image">
+                <picture>
+                    <source media="(min-width:1158px)" srcset="./images/img10 img10, ./images/img10-2x img10-2x">
+                    <source media="(min-width:768px)" srcset="./images/port-tab6 port-tab6, ./images/port-tab6-2x port-tab6-2x">
+                    <source media="(min-width: 320px)"
+                        srcset="./images/port-mobile6.jpg port-mobile6, ./images/port-mobile6-2x port-mobile6-2x">
+                    <img class="portfolio-picture" src="./images/img10.jpg" srcset="./images/img10-2x img10-2x" alt="Online Courses"
+                        width="360">
+                
+                </picture>
                     <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                     </div>
                     <div class="project-container">
